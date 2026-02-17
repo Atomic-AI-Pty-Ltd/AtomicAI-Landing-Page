@@ -1,8 +1,8 @@
 # AtomicAI-Landing-Page
 A refactored landing page for Atomic AI, based off the existing Lovable repository.
 
-- Remove unused shadcn/ui components
-- Remove unused dependencies (radix, react-query, etc.)
+- Removed unused shadcn/ui components
+- Removed unused dependencies (radix, react-query, etc.)
 - Added TypeScript types for Service and Step for better type safety
 - Extracted scrollToBooking to shared utility for reusable logic.
 - Fixed vite.config.ts (remove lovable-tagger)
