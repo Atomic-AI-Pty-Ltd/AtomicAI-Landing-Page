@@ -29,7 +29,7 @@ const HowItWorks = () => {
         >
           Two quick steps
         </motion.h2>
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto section-luster">
           {steps.map((item, index) => (
             <motion.div
               key={item.step}

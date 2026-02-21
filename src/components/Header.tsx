@@ -11,7 +11,7 @@ const Header = () => {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className="fixed top-0 left-0 right-0 z-50 header-glass"
     >
-      <div className="container mx-auto px-4 md:px-6 lg:pl-6 py-3 md:py-4 flex items-center justify-between">
+      <div className="container mx-auto px-4 md:px-6 lg:pl-6 py-3 md:py-4 flex items-center justify-between header-premium-inner">
         <Link to="/" aria-label="Atomic AI Home">
           <img
             src={atomicLogo}

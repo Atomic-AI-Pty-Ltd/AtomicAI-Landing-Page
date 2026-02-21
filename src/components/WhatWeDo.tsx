@@ -38,7 +38,7 @@ const WhatWeDo = () => {
         >
           What we do
         </motion.h2>
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto section-luster">
           {services.map((service, index) => (
             <motion.div
               key={service.title}

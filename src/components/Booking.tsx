@@ -10,6 +10,7 @@ const Booking = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
           className="section-title text-center mb-10 md:mb-12"
+          style={{ fontFamily: "Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif" }}
         >
           Book a time that suits you
         </motion.h2>
@@ -18,7 +19,7 @@ const Booking = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="max-w-4xl mx-auto"
+          className="max-w-4xl mx-auto booking-shell"
         >
           <div className="booking-container">
             <div className="rounded-xl overflow-hidden">
