@@ -10,7 +10,6 @@ const Booking = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
           className="section-title text-center mb-10 md:mb-12"
-          style={{ fontFamily: "Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif" }}
         >
           Book a time that suits you
         </motion.h2>

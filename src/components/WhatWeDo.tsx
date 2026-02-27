@@ -1,25 +1,25 @@
 import { motion } from "framer-motion";
-import { Search, MessageSquare, Layers, GraduationCap } from "lucide-react";
+import { Zap, Sparkles, Network, BookOpenCheck } from "lucide-react";
 import type { Service } from "@/types";
 
 const services: Service[] = [
   {
-    icon: Search,
+    icon: Zap,
     title: "Automation opportunities",
     description: "Identify bottlenecks and quick wins",
   },
   {
-    icon: MessageSquare,
+    icon: Sparkles,
     title: "ChatGPT implementation",
     description: "Instructions and prompt setup",
   },
   {
-    icon: Layers,
+    icon: Network,
     title: "Reusable systems",
     description: "Templates, SOPs, and scalable processes",
   },
   {
-    icon: GraduationCap,
+    icon: BookOpenCheck,
     title: "Training",
     description: "Teach the skills to use, maintain, and improve your systems",
   },
@@ -49,12 +49,14 @@ const WhatWeDo = () => {
               className="card-glass group"
             >
               <div className="flex items-start gap-4">
-                <div
-                  className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/15 transition-colors duration-300"
+                <motion.div
+                  className="w-12 h-12 rounded-xl icon-glossy flex items-center justify-center flex-shrink-0"
                   aria-hidden="true"
+                  whileHover={{ scale: 1.12, rotate: -5 }}
+                  transition={{ type: "spring", stiffness: 340, damping: 20 }}
                 >
-                  <service.icon className="w-6 h-6 text-primary" />
-                </div>
+                  <service.icon className="w-5 h-5 text-primary icon-transition" strokeWidth={1.8} />
+                </motion.div>
                 <div>
                   <h3 className="text-xl font-display font-semibold text-foreground mb-2">
                     {service.title}

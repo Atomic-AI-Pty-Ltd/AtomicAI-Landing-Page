@@ -1,15 +1,15 @@
 import { motion } from "framer-motion";
-import { Calendar, FileText } from "lucide-react";
+import { CalendarCheck2, ClipboardList } from "lucide-react";
 import type { Step } from "@/types";
 
 const steps: Step[] = [
   {
-    icon: Calendar,
+    icon: CalendarCheck2,
     step: "Step 1",
     description: "Choose a time that suits you (booking calendar below)",
   },
   {
-    icon: FileText,
+    icon: ClipboardList,
     step: "Step 2",
     description:
       "Tell us a little about your business (form included in booking calendar)",
@@ -40,17 +40,20 @@ const HowItWorks = () => {
               className="card-glass group"
             >
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/15 transition-colors duration-300"
+                <motion.div
+                  className="w-12 h-12 rounded-xl icon-glossy flex items-center justify-center flex-shrink-0"
                   aria-hidden="true"
+                  whileHover={{ scale: 1.12, rotate: -5 }}
+                  transition={{ type: "spring", stiffness: 340, damping: 20 }}
                 >
-                  <item.icon className="w-6 h-6 text-primary" />
-                </div>
+                  <item.icon className="w-5 h-5 text-primary icon-transition" strokeWidth={1.8} />
+                </motion.div>
                 <div>
-                  <span className="text-sm font-semibold text-primary uppercase tracking-wide">
+                  <span className="step-badge">
                     {item.step}
                   </span>
                   <p
-                    className="text-foreground mt-2 text-lg"
+                    className="text-foreground mt-2.5 text-lg"
                     style={{ lineHeight: "1.5" }}
                   >
                     {item.description}
